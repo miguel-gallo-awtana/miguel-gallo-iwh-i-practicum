@@ -1,0 +1,31 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Vehicles
+        form(action="/update-cobj", method="post").form-wrapper 
+            label(for="name") Name
+            input#name(type="text", name="name")
+
+            label(for="make") Make
+            input#make(type="text", name="make")
+
+            label(for="model") Model
+            input#model(type="text", name="model")
+
+            label(for="year") Year
+            input#year(type="number", name="year")
+
+            label(for="color") Color
+            input#color(type="text", name="color")
+
+            label(for="plate") Plate
+            input#plate(type="text", name="plate")
+
+            label(for="mileage") Mileage
+            input#mileage(type="number", name="mileage")
+
+            input(type="submit", value="Create vehicle")
