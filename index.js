@@ -14,7 +14,7 @@ const PRIVATE_APP_ACCESS = process.env.PRIVATE_APP_ACCESS;
 
 // * Code for Route 1 goes here
 
-app.get('/update-cobj', async (req, res) => {
+app.get('/update-cobj', (req, res) => {
     res.render('updates', { title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' })
 });
 
