@@ -1,0 +1,29 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Custom Objects Table
+        a(href="/update-cobj") Add/Update this table
+        table 
+            thead
+                tr
+                    th Name
+                    th Make
+                    th Model
+                    th Year
+                    th Color
+                    th Plate
+                    th Mileage
+            tbody
+                each object in data
+                    tr
+                        td #{object.properties.name}
+                        td #{object.properties.make}
+                        td #{object.properties.model}
+                        td #{object.properties.year}
+                        td #{object.properties.color}
+                        td #{object.properties.plate}
+                        td #{object.properties.mileage}
